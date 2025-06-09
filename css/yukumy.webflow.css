@@ -1100,6 +1100,13 @@ figcaption {
   margin-top: 1rem;
 }
 
+.button-group.growth {
+  align-self: stretch;
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .text-color-white {
   color: var(--_primitives---colors--white);
 }
@@ -2280,6 +2287,11 @@ figcaption {
   max-width: none;
 }
 
+.button-cta.max-width-full.white {
+  background-color: var(--yukumy-off-white);
+  color: var(--yukumy-dark);
+}
+
 .empty-square {
   width: 2rem;
   height: 2rem;
@@ -2735,6 +2747,8 @@ figcaption {
   grid-column-gap: .25rem;
   grid-row-gap: .25rem;
   flex-flow: wrap;
+  justify-content: center;
+  align-items: flex-start;
   display: flex;
 }
 
@@ -4287,6 +4301,124 @@ figcaption {
   max-width: none;
 }
 
+.growth-grid {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.growth-card {
+  border-radius: var(--_ui-styles---radius--large);
+  background-color: var(--yukumy-off-white);
+  border: 1px dashed #d1d1d1;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.growth-card.right {
+  background-color: var(--yukumy-dark);
+  padding-top: 3rem;
+}
+
+.growth-card.left {
+  background-color: #fff;
+  padding-top: 3rem;
+}
+
+.growth-card-wrapper {
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  flex-flow: column;
+  align-items: stretch;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+.growth-services-wrapper {
+  z-index: 2;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  position: relative;
+}
+
+.growth-services-wrapper.sm {
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.growth-tag {
+  background-color: var(--yukumy-off-white);
+  border: 1px dashed #d1d1d1;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+}
+
+.growth-tags-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.service-wrapper-big-copy {
+  border-radius: var(--_ui-styles---radius--large);
+  background-color: var(--yukumy-off-white);
+  border: 1px dashed #d1d1d1;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.growth-metrics-wrapper {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-auto-columns: 1fr;
+  width: 100%;
+  margin-top: 3rem;
+  display: grid;
+}
+
+.metric-wrapper {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  background-color: #fff;
+  border: 1px dashed #000;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.badge-visual {
+  width: 1.5rem;
+  max-width: none;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -4818,6 +4950,16 @@ figcaption {
     grid-column-gap: 32px;
     grid-row-gap: 32px;
   }
+
+  .growth-card-wrapper, .growth-services-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .growth-metrics-wrapper {
+    flex-flow: column;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5305,6 +5447,17 @@ figcaption {
   .footer-sub-part {
     height: 24px;
   }
+
+  .growth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-metrics-wrapper {
+    flex-flow: column;
+    grid-auto-flow: column;
+    align-items: stretch;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5551,6 +5704,14 @@ figcaption {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
   }
+
+  .growth-services-wrapper.sm {
+    padding-top: 0;
+  }
+
+  .service-wrapper-big-copy {
+    padding-bottom: 1.5rem;
+  }
 }
 
 #w-node-_35324c4f-d670-14f6-ccb2-f66ee94102db-f778390e {
@@ -5581,7 +5742,7 @@ figcaption {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-d7f67ba7-e018-d791-d960-8724f7fac688-f778390e {
+#w-node-efedb522-fe86-0581-e492-75f478137e94-f778390e, #w-node-efedb522-fe86-0581-e492-75f478137eca-f778390e, #w-node-d7f67ba7-e018-d791-d960-8724f7fac688-f778390e {
   align-self: stretch;
 }
 
